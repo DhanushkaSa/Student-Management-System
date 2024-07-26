@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1558.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="355.0" style="-fx-background-color: linear-gradient(#13547a,#80d0c7);">
+         <children>
+            <FontAwesomeIcon fill="#f4f2f2" glyphName="USER" layoutX="132.0" layoutY="125.0" size="100" />
+            <Label fx:id="lblStudentName" layoutX="77.0" layoutY="334.0" prefHeight="35.0" prefWidth="252.0" text="Student Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAge" layoutX="77.0" layoutY="400.0" prefHeight="35.0" prefWidth="252.0" text="Age">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTelephone" layoutX="74.0" layoutY="469.0" prefHeight="35.0" prefWidth="252.0" text="Telephone">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="74.0" layoutY="531.0" prefHeight="35.0" prefWidth="252.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCourseId" layoutX="74.0" layoutY="600.0" prefHeight="35.0" prefWidth="252.0" text="Course Id">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCourseName" layoutX="74.0" layoutY="671.0" prefHeight="35.0" prefWidth="252.0" text="Course Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="125.0" layoutY="270.0" onAction="#btnProfileOnClick" prefHeight="43.0" prefWidth="96.0" style="-fx-background-color: yellow;" text="Profile">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="txtPassword" layoutX="98.0" layoutY="223.0" prefHeight="35.0" prefWidth="158.0" promptText="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon glyphName="USER" layoutX="39.0" layoutY="363.0" size="30" text="" />
+            <FontAwesomeIcon glyphName="PHONE" layoutX="39.0" layoutY="497.0" size="30" />
+            <FontAwesomeIcon glyphName="GOOGLE" layoutX="40.0" layoutY="559.0" size="30" />
+            <FontAwesomeIcon glyphName="YAHOO" layoutX="38.0" layoutY="428.0" size="30" />
+            <FontAwesomeIcon glyphName="UNIVERSITY" layoutX="33.0" layoutY="628.0" size="30" />
+            <FontAwesomeIcon glyphName="BOOK" layoutX="36.0" layoutY="699.0" size="30" />
+            <TextField fx:id="txtUserName" layoutX="97.0" layoutY="167.0" prefHeight="35.0" prefWidth="158.0" promptText="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="357.0" layoutY="1.0" prefHeight="800.0" prefWidth="1203.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
