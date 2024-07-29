@@ -1,6 +1,8 @@
 package dao;
 
+import dao.custom.CourseDaoImpl;
 import dao.custom.StudentDaoImpl;
+import dao.custom.TeacherDaoImpl;
 
 public class DaoFactory {
 
@@ -26,7 +28,12 @@ public class DaoFactory {
             case STUDENT:
                 
                 return new StudentDaoImpl();
+
+            case COURSE:
+                return new CourseDaoImpl();
         
+            case TEACHER:
+                return new TeacherDaoImpl();
             default:
                 return null;
         }

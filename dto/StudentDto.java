@@ -10,20 +10,20 @@ public class StudentDto {
     private String Telephone;
     private String Email;
     private String password;
-    private ArrayList<CourseDto> CourseDto;
+    private String Course_Id;
     
     public StudentDto() {
     }
 
     public StudentDto(String student_Id, String student_Name, Integer age, String telephone, String email,
-            String password, ArrayList<dto.CourseDto> courseDto) {
+            String password, String course_Id) {
         Student_Id = student_Id;
         Student_Name = student_Name;
         Age = age;
         Telephone = telephone;
         Email = email;
         this.password = password;
-        CourseDto = courseDto;
+        Course_Id = course_Id;
     }
 
     public String getStudent_Id() {
@@ -74,20 +74,24 @@ public class StudentDto {
         this.password = password;
     }
 
-    public ArrayList<CourseDto> getCourseDto() {
-        return CourseDto;
+    public String getCourse_Id() {
+        return Course_Id;
     }
 
-    public void setCourseDto(ArrayList<CourseDto> courseDto) {
-        CourseDto = courseDto;
+    public void setCourse_Id(String course_Id) {
+        Course_Id = course_Id;
     }
 
     @Override
     public String toString() {
         return "StudentDto [Student_Id=" + Student_Id + ", Student_Name=" + Student_Name + ", Age=" + Age
-                + ", Telephone=" + Telephone + ", Email=" + Email + ", password=" + password + ", CourseDto="
-                + CourseDto + "]";
+                + ", Telephone=" + Telephone + ", Email=" + Email + ", password=" + password + ", Course_Id="
+                + Course_Id + "]";
     }
+
+    
+
+    
 
     
 }

@@ -17,7 +17,7 @@ public class StudentDaoImpl implements StudentDao{
         statement.setString(2, password);
         ResultSet srt=statement.executeQuery();
         if(srt.next()){
-            StudentEntity entity=new StudentEntity(srt.getString(1), srt.getString(2), Integer.parseInt(srt.getString(3)), srt.getString(4), srt.getString(5), srt.getString(6));
+            StudentEntity entity=new StudentEntity(srt.getString(1), srt.getString(2), Integer.parseInt(srt.getString(3)), srt.getString(4), srt.getString(5), srt.getString(6), srt.getString(7));
             return entity;
         }
         return null;

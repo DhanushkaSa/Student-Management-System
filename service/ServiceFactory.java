@@ -1,6 +1,8 @@
 package service;
 
+import service.custom.CourseServiceImpl;
 import service.custom.StudentServiceImpl;
+import service.custom.TeacherServiceImpl;
 
 public class ServiceFactory {
 
@@ -25,7 +27,10 @@ public class ServiceFactory {
         switch (type) {
             case STUDENT:
                 return new StudentServiceImpl();
-        
+            case COURSE:
+                return new CourseServiceImpl();
+            case TEACHER:
+                return new TeacherServiceImpl();
             default:
                 return null;
         }

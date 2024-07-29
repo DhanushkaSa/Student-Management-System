@@ -19,7 +19,7 @@ public class StudentServiceImpl implements StudentService {
             return null;
         } else {
             StudentDto dto = new StudentDto(entity.getStudent_Id(), entity.getStudent_Name(), entity.getAge(),
-                    entity.getTelephone(), entity.getEmail(), entity.getPassword(), null);
+                    entity.getTelephone(), entity.getEmail(), entity.getPassword(), entity.getCourse_Id());
             return dto;
         }
 

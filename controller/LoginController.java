@@ -38,6 +38,18 @@ public class LoginController {
     @FXML
     void btnLoginOnAction(ActionEvent event) throws Exception {
 
+        login();
+
+    }
+
+   
+
+    public void clearLoginData(){
+        txtUserName.setText("");
+        txtPassword.setText("");
+    }
+
+    public void login() throws Exception{
         String studentId=txtUserName.getText();
         String password=txtPassword.getText();
         StudentDto dto=studentService.getStudent(studentId, password);
@@ -60,11 +72,7 @@ public class LoginController {
             }
         }
 
-    }
-
-    public void clearLoginData(){
-        txtUserName.setText("");
-        txtPassword.setText("");
+        
     }
 
 }

@@ -8,18 +8,20 @@ public class StudentEntity {
     private String Telephone;
     private String Email;
     private String password;
+    private String course_Id;
     
     public StudentEntity() {
     }
 
     public StudentEntity(String student_Id, String student_Name, Integer age, String telephone, String email,
-            String password) {
+            String password, String course_Id) {
         Student_Id = student_Id;
         Student_Name = student_Name;
         Age = age;
         Telephone = telephone;
         Email = email;
         this.password = password;
+        this.course_Id = course_Id;
     }
 
     public String getStudent_Id() {
@@ -70,11 +72,22 @@ public class StudentEntity {
         this.password = password;
     }
 
+    public String getCourse_Id() {
+        return course_Id;
+    }
+
+    public void setCourse_Id(String course_Id) {
+        this.course_Id = course_Id;
+    }
+
     @Override
     public String toString() {
         return "StudentEntity [Student_Id=" + Student_Id + ", Student_Name=" + Student_Name + ", Age=" + Age
-                + ", Telephone=" + Telephone + ", Email=" + Email + ", password=" + password + "]";
+                + ", Telephone=" + Telephone + ", Email=" + Email + ", password=" + password + ", course_Id="
+                + course_Id + "]";
     }
+
+    
 
     
 }
